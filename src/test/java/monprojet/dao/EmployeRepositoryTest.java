@@ -7,11 +7,7 @@ import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.List;
-
 import monprojet.entity.*;
-import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.test.context.jdbc.Sql;
 
 @Log4j2 // Génère le 'logger' pour afficher les messages de trace
 @DataJpaTest

@@ -10,6 +10,8 @@ import lombok.*;
 // cf. https://examples.javacodegeeks.com/spring-boot-with-lombok/
 @Getter @Setter @NoArgsConstructor @RequiredArgsConstructor @ToString
 @Entity
+@DiscriminatorColumn(name = "type_employe")
+
 public class Employe {
     @Id  @GeneratedValue(strategy = GenerationType.IDENTITY) 
     private Integer matricule;
